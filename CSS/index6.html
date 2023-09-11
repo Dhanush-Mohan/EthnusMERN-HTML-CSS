@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Task6</title>
+    <style>
+      img {
+        width: 250px;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 50%; */
+      }
+      .field {
+        font-weight: bolder;
+        padding: 20px 0 0 0;
+      }
+      .input {
+        width: 95%;
+        /* border: none; */
+        padding: 13px 15px;
+      }
+      .login {
+        /* display: block; */
+        width: 100%;
+        border: none;
+        background-color: #4cb44c;
+        color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        margin: 18px 0 18px 0;
+      }
+
+      .login:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .cancel {
+        background-color: red;
+        border-radius: 8px;
+        border-style: none;
+        box-sizing: border-box;
+        color: #ffffff;
+        cursor: pointer;
+        display: inline-block;
+        font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        height: 40px;
+        line-height: 20px;
+        list-style: none;
+        margin: 0;
+        outline: none;
+        padding: 10px 16px;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: color 100ms;
+        vertical-align: baseline;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+      .cancel:hover {
+        background-color: #f082ac;
+      }
+      .forgotpass {
+        text-align: left;
+        float: right;
+      }
+      .checkbox {
+        margin: 5px 0 20px 0;
+      }
+      .footer {
+        background-color: #e8e9eb;
+        padding: 15px;
+      }
+      .center {
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+      }
+      .container {
+        width: 750px;
+        height: 650px;
+        border: 0px solid black;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        font-family: monospace;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center container">
+      <h1 style="font-size: xx-large; text-align: center">Task 6</h1>
+      <img src="css_task6.jpg" alt="Account" />
+      <div class="field">
+        <label for="un">Username</label><br />
+        <input
+          type="text"
+          name="un"
+          class="input"
+          placeholder="Enter Username"
+        />
+      </div>
+      <div class="field">
+        <label for="pass">Password</label><br />
+        <input
+          type="password"
+          name="pass"
+          class="input"
+          placeholder="Enter Password"
+        />
+      </div>
+      <div class="lgn">
+        <button class="login">Login</button>
+      </div>
+      <div class="checkbox"><input type="checkbox" />Remember Me</div>
+      <div class="footer">
+        <button class="cancel">Cancel</button>
+        <a href="#" class="forgotpass">Forgot Password?</a>
+      </div>
+    </div>
+  </body>
+</html>
